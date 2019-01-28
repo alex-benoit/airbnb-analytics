@@ -11,6 +11,7 @@ gem 'sqlite3'
 gem 'turbolinks'
 gem 'webpacker'
 
+gem 'clearance'
 gem 'mixpanel-ruby'
 
 gem 'bootsnap', require: false
