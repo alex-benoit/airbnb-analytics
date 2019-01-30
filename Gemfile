@@ -4,10 +4,10 @@ source 'https://rubygems.org'
 ruby '2.6.0'
 
 gem 'jbuilder'
+gem 'pg'
 gem 'puma'
 gem 'rails', '~> 6.0.0.beta1'
 gem 'sass-rails'
-gem 'sqlite3'
 gem 'turbolinks'
 gem 'webpacker'
 
