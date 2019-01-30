@@ -1,6 +1,11 @@
 <h1>Flats</h1>
 
+<% @flats.each do |flat| %>
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-xl-3">
+      <%= render 'flat', flat: flat %>
+    </div>
+  </div>
+<% end %>
 
-<br>
-
-<%= link_to 'New Flat', new_flat_path %>
+<%= link_to 'New Flat', new_flat_path, class: 'btn btn-secondary' %>

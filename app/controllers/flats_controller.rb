@@ -2,11 +2,13 @@
 
 class FlatsController < ApplicationController
   before_action :set_flat, only: %i[show edit update destroy]
+  before_action :set_active_tab
   before_action :require_login, only: %i[new edit create update destroy]
 
   # GET /flats
   def index
     @flats = Flat.all
+    @active_tab = :flats
   end
 
   # GET /flats/1
@@ -65,5 +67,9 @@ class FlatsController < ApplicationController
 
   def flat_params
     params.require(:flat).permit(:name, :description, :location, :price, :photo_url, :lat, :lng)
+  end
+
+  def set_active_tab
+    @active_tab = :flats
   end
 end
