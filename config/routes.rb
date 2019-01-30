@@ -17,3 +17,9 @@ Rails.application.routes.draw do
   delete 'sign_out', to: 'sessions#destroy', as: 'sign_out'
   get 'sign_up', to: 'users#new', as: 'sign_up'
 end
+
+# call identify on signup
+# set email property
+# track viewing of auth pages with correct distinct id
+
+# build funnels and conversion ?
