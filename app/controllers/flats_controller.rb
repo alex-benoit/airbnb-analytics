@@ -59,12 +59,10 @@ class FlatsController < ApplicationController
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
   def set_flat
     @flat = Flat.find(params[:id])
   end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
   def flat_params
     params.require(:flat).permit(:name, :description, :location, :price, :photo_url, :lat, :lng)
   end
