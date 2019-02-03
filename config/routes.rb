@@ -21,5 +21,6 @@ end
 # call identify on signup
 # set email property
 # track viewing of auth pages with correct distinct id
+# with correct metadata
 
 # build funnels and conversion ?

@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class FlatsController < ApplicationController
+  include Trackable
+
   before_action :set_flat, only: %i[show edit update destroy]
   before_action :set_active_tab
   before_action :require_login, only: %i[new edit create update destroy]
