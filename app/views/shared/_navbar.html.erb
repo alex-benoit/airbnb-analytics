@@ -22,9 +22,9 @@
   <div>
     <% if signed_in? %>
       <span>Signed in as: <%= current_user.email %></span> |
-      <%= link_to 'Sign out', sign_out_path, method: :delete %>
+      <%= link_to 'Sign out', sign_out_path, method: :delete, class: 'nav-link' %>
     <% else %>
-      <%= link_to 'Sign in', sign_in_path %>
+      <%= link_to 'Sign in', sign_in_path, class: 'nav-link' %>
     <% end %>
   </div>
 </nav>
